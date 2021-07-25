@@ -42,16 +42,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="back"
-                href="http://sam4uk.site/back/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://sam4uk.site/ko/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="uk"
                 href="http://sam4uk.site/categories/"
                 />
@@ -112,16 +102,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="back"
-                href="http://sam4uk.site/back/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://sam4uk.site/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="uk"
                 href="http://sam4uk.site/series/"
                 />
@@ -134,16 +114,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://sam4uk.site/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="back"
-                href="http://sam4uk.site/back/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://sam4uk.site/ko/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -468,6 +438,126 @@
   </url>
   
   <url>
+    <loc>http://sam4uk.site/tags/css/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://sam4uk.site/en/tags/css/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://sam4uk.site/tags/css/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://sam4uk.site/tags/html/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://sam4uk.site/en/tags/html/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://sam4uk.site/tags/html/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://sam4uk.site/tags/markdown/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://sam4uk.site/en/tags/markdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://sam4uk.site/tags/markdown/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://sam4uk.site/posts/markdown-syntax/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://sam4uk.site/en/posts/markdown-syntax/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://sam4uk.site/posts/markdown-syntax/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://sam4uk.site/categories/syntax/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://sam4uk.site/en/categories/syntax/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://sam4uk.site/categories/syntax/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://sam4uk.site/tags/themes/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://sam4uk.site/en/tags/themes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://sam4uk.site/tags/themes/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://sam4uk.site/categories/themes/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://sam4uk.site/en/categories/themes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://sam4uk.site/categories/themes/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://sam4uk.site/series/themes-guide/</loc>
+    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://sam4uk.site/en/series/themes-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://sam4uk.site/series/themes-guide/"
+                />
+  </url>
+  
+  <url>
     <loc>http://sam4uk.site/series/demo/</loc>
     <lastmod>2019-12-18T10:33:41+09:00</lastmod>
     <xhtml:link
@@ -522,16 +612,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="back"
-                href="http://sam4uk.site/back/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://sam4uk.site/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="uk"
                 href="http://sam4uk.site/"
                 />
@@ -549,6 +629,20 @@
                 rel="alternate"
                 hreflang="uk"
                 href="http://sam4uk.site/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://sam4uk.site/posts/markdown-basic-syntax/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://sam4uk.site/en/posts/markdown-basic-syntax/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://sam4uk.site/posts/markdown-basic-syntax/"
                 />
   </url>
   

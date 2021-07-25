@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>markdown on Sam4uk</title>
+    <link>http://sam4uk.site/en/tags/markdown/</link>
+    <description>Recent content in markdown on Sam4uk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>sto.ukr.net@gmail.com (Sam4uk)</managingEditor>
+    <webMaster>sto.ukr.net@gmail.com (Sam4uk)</webMaster>
+    <copyright>©2019-2021, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 20 Dec 2019 12:00:06 +0900</lastBuildDate>
+    
+        <atom:link href="http://sam4uk.site/en/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Markdown синтаксис</title>
+        <link>http://sam4uk.site/en/posts/markdown-syntax/</link>
+        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        <atom:modified>Fri, 20 Dec 2019 12:00:06 +0900</atom:modified>
+        <guid>http://sam4uk.site/en/posts/markdown-syntax/</guid>
+        <description>&lt;p&gt;Ця стаття пропонує оглянути базові елементи синтаксису які можна використовувати в &lt;code&gt;Hugo&lt;/code&gt; файлах контенту, також демонструє базові HTML елемненти які оформлені каскадними таблицями стилів встановленої теми.&lt;/p&gt;</description>
+        
+        <dc:creator>Sam4uk</dc:creator>
+        <media:content url="http://sam4uk.site/images/feature1/markdown.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>markdown</category>
+            
+          
+            
+              <category>css</category>
+            
+          
+            
+              <category>html</category>
+            
+          
+            
+              <category>themes</category>
+            
+          
+        
+        
+          
+            
+              <category>themes</category>
+            
+          
+            
+              <category>syntax</category>
+            
+          
+        
+        
+          
+            
+              <category>Themes Guide</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Markdown базовий синтаксис</title>
+        <link>http://sam4uk.site/en/posts/markdown-basic-syntax/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        
+        <guid>http://sam4uk.site/en/posts/markdown-basic-syntax/</guid>
+        <description>&lt;h1 id=&#34;основний-синтаксис&#34;&gt;Основний синтаксис&lt;/h1&gt;
+&lt;p&gt;Елементи Markdown, викладені в проектному документі Джона Грубера&lt;/p&gt;
+&lt;h2 id=&#34;огляд&#34;&gt;Огляд&lt;/h2&gt;
+&lt;p&gt;Майже всі додатки Markdown підтримують основний синтакси, ивкладений в проектному документі Джона Грубера. Між процесорами Makrdown є розбідності та основні елементи залишаються вбудованими&lt;/p&gt;
+&lt;h2 id=&#34;заголовки&#34;&gt;Заголовки&lt;/h2&gt;
+&lt;p&gt;Щоб створити заголовки, додайте перед словом чи фразою знак &amp;ldquo;дієз&amp;rdquo; &lt;code&gt;#&lt;/code&gt;. Кількість знаків відповідає рівню заголовка. Наприклад, щоб створити заголовок рівня &lt;code&gt;&amp;lt;h3&amp;gt;&lt;/code&gt; потрібно використати три знаки &amp;ldquo;решітки&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;# Рівень перший&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;## Рівень другий&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;### Рівень третій&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;#### Рівень четрвертий&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;##### Рівень п&#39;ятий&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;###### Рівень шостий&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;альтернативний-синтаксис&#34;&gt;Альтернативний синтаксис&lt;/h3&gt;
+&lt;p&gt;Існує та пітримується альтенативний синтаксис для виділення заголовків першого та другого рівнів. Щоб виділити заголовок першого рівня його потрібно &amp;ldquo;підкреслити&amp;rdquo; знаками рівності &lt;code&gt;=&lt;/code&gt;, а другого - &amp;ldquo;мінусом&amp;rdquo; &lt;code&gt;-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;Заголовок першого рівня
+=======================
+
+Заголовок другого рівня
+-----------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Кількість знаків що підкреслюють може бути довільною, але не меншою 3 знаків.&lt;/p&gt;
+&lt;p&gt;Рекомендується після та перед рядком заголовку робити принаймі оди порожній рядок, а також після символу &lt;code&gt;#&lt;/code&gt; також ставити принаймі один пробільний символ&lt;/p&gt;
+&lt;h2 id=&#34;абзаци&#34;&gt;Абзаци&lt;/h2&gt;
+&lt;p&gt;Для того щоб створити абзац потрібно розділити його від наступного чи попереднього принаймі одним порожнім рядком.&lt;/p&gt;
+&lt;p&gt;Ні в якому разі не робліть відступи нового абзацу пробілами чи табуляцією!&lt;/p&gt;
+&lt;h2 id=&#34;розриви-рядка&#34;&gt;Розриви рядка&lt;/h2&gt;
+&lt;p&gt;Щоб зробити примусовий розрив рядка закінчте рядок двома або більше пробільними символами та натисніть клавішу переведення рядка (&lt;code&gt;[ENTER]&lt;/code&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;акцент&#34;&gt;Акцент&lt;/h2&gt;
+&lt;p&gt;Ви можете робити наголос на певних словах у тексті&lt;/p&gt;
+&lt;h3 id=&#34;курсив&#34;&gt;Курсив&lt;/h3&gt;
+&lt;p&gt;Щоб виділити фрагмент тексту додайте на початку фрагменту та в кінці одну зірочку чи знак підкреслення&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;*курсив* та &lt;span class=&#34;ge&#34;&gt;_курсив_&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Отримаєте &lt;em&gt;курсив&lt;/em&gt; та &lt;em&gt;кусив&lt;/em&gt;. Якщо потрібно виділити курсивом одну літеру у слові &lt;strong&gt;РЕКОМНЕДУЄТЬСЯ&lt;/strong&gt; використовувати зірочку!!!&lt;/p&gt;
+&lt;h3 id=&#34;жирний&#34;&gt;Жирний&lt;/h3&gt;
+&lt;p&gt;Щоб виділити текст напівжирним потрібно перед та після потрібного фрагменту поставити дві зірочки чи два знаки підкреслення&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;**жирний текст** &lt;span class=&#34;gs&#34;&gt;__жирний текст__&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Ви отримаєте &lt;strong&gt;жирний текст&lt;/strong&gt; &lt;strong&gt;жирний текст&lt;/strong&gt;. Але якщо вам потрібно виділити кілька символів в одному слові &lt;strong&gt;РЕКОМЕНДУЄТЬСЯ&lt;/strong&gt; використовувати зірочки, текст &lt;code&gt;лі__Т__ера&lt;/code&gt; не буде віділяти літеру &lt;code&gt;T&lt;/code&gt;. Правильним буде використання наступного коду&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;лі**Т**ера
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;лі&lt;strong&gt;Т&lt;/strong&gt;ера&lt;/p&gt;
+&lt;h3 id=&#34;жирний-курсив&#34;&gt;Жирний курсив&lt;/h3&gt;
+&lt;p&gt;Щоб виділити текст жирним курсивом потрібно обмежити фрагмент текст трьома зірочками або знаками підкреслення&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;*__це жирний курсив__*
+&lt;span class=&#34;gs&#34;&gt;___це також жирний курсив___&lt;/span&gt;
+&lt;span class=&#34;gs&#34;&gt;***і це жирний курсив**&lt;/span&gt;*
+&lt;span class=&#34;gs&#34;&gt;__*і це жирний курсив*__&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Якщо потрібно жирним курсивом фрагмент слова &lt;strong&gt;РЕКОМНЕДУЄТЬСЯ&lt;/strong&gt; використовувати зірочки!!!&lt;/p&gt;
+&lt;h2 id=&#34;блок-цитати&#34;&gt;Блок цитати&lt;/h2&gt;
+&lt;p&gt;Щоб сторити блок цитату, додайте знак &lt;code&gt;&amp;gt;&lt;/code&gt; перед абзацом&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;Дороті йшла за нею через багато прекрасних кімнат у своєму замку
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Матиме вигляд:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Дороті йшла за нею через багато прекрасних кімнат у своєму замку&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;цитати-кількох-абзаців&#34;&gt;Цитати кількох абзаців&lt;/h3&gt;
+&lt;p&gt;Щоб процитувати кілька абзаців потрібно порожні рядки почати із знаку більше&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;Дороті йшла за нею через багато прекрасних кімнат у своєму замку
+&lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;&amp;gt; Відьма наказала їй почистити кастрюлі та чайники, підмітати підлогу та підтримувати вогонь
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Матиме вигляд&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Дороті йшла за нею через багато прекрасних кімнат у своєму замку&lt;/p&gt;
+&lt;p&gt;Відьма наказала їй почистити кастрюлі та чайники, підмітати підлогу та підтримувати вогонь&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;вкладені-цитати&#34;&gt;Вкладені цитати&lt;/h3&gt;
+&lt;p&gt;Цитати можна вкладати. Для цього кількістю знаків &lt;code&gt;&amp;gt;&lt;/code&gt; вкажемо рівень вкладеності&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;Дороті йшла за нею через багато прекрасних кімнат у своєму замку
+&lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;&amp;gt;&amp;gt; Відьма наказала їй почистити кастрюлі та чайники, підмітати підлогу та підтримувати вогонь
+&lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Матиме вигляд&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Дороті йшла за нею через багато прекрасних кімнат у своєму замку&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Відьма наказала їй почистити кастрюлі та чайники, підмітати підлогу та підтримувати вогонь&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;форматування-блок-цитат&#34;&gt;Форматування блок цитат&lt;/h3&gt;
+&lt;p&gt;Блок цитата може містити інші елементи форматування Markdown. Ви повинні мату на увазі, що не всі елементи можуть підтримуватися і щоб дізнатися чи вони працюють потрібно буде поексперементувати&lt;/p&gt;
+&lt;h2 id=&#34;списки&#34;&gt;Списки&lt;/h2&gt;
+&lt;p&gt;Ви можете організовувати пронумерований та не номурований списки&lt;/p&gt;
+&lt;h3 id=&#34;впорядковани-список&#34;&gt;Впорядковани список&lt;/h3&gt;
+&lt;p&gt;Щоб сторити пронумерований список потрібно поставити цифру з крапкою. Важливо, що перший рядок повинен починатися з &lt;code&gt;1&lt;/code&gt; далі порядок та нумерація списку не є важливою. Список буде пронумерований у порядку в якому написані елементи&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; Перший пукнт
+&lt;span class=&#34;k&#34;&gt;3.&lt;/span&gt; Другий пункт
+&lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; Третій пункт
+&lt;span class=&#34;k&#34;&gt;4.&lt;/span&gt; Четрвертий пункт
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;Перший пукнт&lt;/li&gt;
+&lt;li&gt;Другий пункт&lt;/li&gt;
+&lt;li&gt;Третій пункт&lt;/li&gt;
+&lt;li&gt;Четрвертий пункт&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;маркований-список&#34;&gt;Маркований список&lt;/h3&gt;
+&lt;p&gt;Щоб створити невпорядкований список, додайте тире, зірочку або плюс на початку рядків з позиціями&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;+ Елемент списку
++ Інший елемент списку
++ Іще один елемнт списку
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Елемент списку&lt;/li&gt;
+&lt;li&gt;Інший елемент списку&lt;/li&gt;
+&lt;li&gt;Іще один елемнт списку&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;вкладені-списки&#34;&gt;Вкладені списки&lt;/h3&gt;
+&lt;p&gt;Ви можете комбінувати впорядкований та невпорядковані списки створюючи багаторівневі вкладені списки. Для цього потріьно зробити відступ для наступного рівня&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;+ Літери
+    &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Великі
+        &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; А
+        &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; Б
+        &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; В
+        &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; ...
+    &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Маленькі
+        &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; а
+        &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; б
+        &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; в
+        &lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; ...
++ Цифри
+    &lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 1
+    &lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; 2
+    &lt;span class=&#34;k&#34;&gt;4.&lt;/span&gt; 3
+    &lt;span class=&#34;k&#34;&gt;3.&lt;/span&gt; 4
+    &lt;span class=&#34;k&#34;&gt;5.&lt;/span&gt; ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Літери
+&lt;ul&gt;
+&lt;li&gt;Великі
+&lt;ul&gt;
+&lt;li&gt;А&lt;/li&gt;
+&lt;li&gt;Б&lt;/li&gt;
+&lt;li&gt;В&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Маленькі
+&lt;ul&gt;
+&lt;li&gt;а&lt;/li&gt;
+&lt;li&gt;б&lt;/li&gt;
+&lt;li&gt;в&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Цифри
+&lt;ol&gt;
+&lt;li&gt;1&lt;/li&gt;
+&lt;li&gt;2&lt;/li&gt;
+&lt;li&gt;3&lt;/li&gt;
+&lt;li&gt;4&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;невпорядкований-список-з-цифрою&#34;&gt;Невпорядкований список з цифрою&lt;/h3&gt;
+&lt;p&gt;Якщо вам потрібен не впорядкований список елементів який починається з цифри за яким слідує крапка, ви можете скористатися зворотьою рискою для виведення крапки&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 1968\. Чудовий рік
+&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Я ввіжаю, 1969 рік був друним кращим
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;1968. Чудовий рік&lt;/li&gt;
+&lt;li&gt;Я ввіжаю, 1969 рік був друним кращим&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;додавання-елементів-у-списки&#34;&gt;Додавання елементів у списки&lt;/h2&gt;
+&lt;p&gt;Щоб додати ще один елемент до списку, зберігаючи безперевність списку, потрібно відступити на чотири пробіли або на один таб, як показано у наступних прикладах&lt;/p&gt;
+&lt;h3 id=&#34;абзаци-1&#34;&gt;Абзаци&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; Це перший пункт
+&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; Це другий елемент списку
+    
+    Я додаю абзац у другий пункт списку
+
+&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; Це третій пункт
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Це матиме вигляд:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Це перший пункт&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Це другий елемент списку&lt;/p&gt;
+&lt;p&gt;Я додаю абзац у другий пункт списку&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Це третій пункт&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;блок-цитати-1&#34;&gt;Блок-цитати&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; Це перший пункт
+&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; Це другий елемент списку
+&lt;span class=&#34;k&#34;&gt;    
+&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;    &amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;Я додаю цитату до другого елементу списку
+&lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;*&lt;/span&gt; Це третій пункт
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Це матиме вигляд:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Це перший пункт&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Це другий елемент списку&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Я додаю цитату до другого елементу списку&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Це третій пункт&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png&#34; alt=&#34;Tux&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;блоки-коду&#34;&gt;Блоки коду&lt;/h2&gt;</description>
+        
+        <dc:creator>Sam4uk</dc:creator>
+        <media:content url="http://sam4uk.site/images/feature1/markdown.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>markdown</category>
+            
+          
+            
+              <category>css</category>
+            
+          
+            
+              <category>html</category>
+            
+          
+            
+              <category>themes</category>
+            
+          
+        
+        
+          
+            
+              <category>themes</category>
+            
+          
+            
+              <category>syntax</category>
+            
+          
+        
+        
+          
+            
+              <category>Themes Guide</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
