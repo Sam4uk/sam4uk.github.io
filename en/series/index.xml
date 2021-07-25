@@ -14,19 +14,19 @@
     <managingEditor>sto.ukr.net@gmail.com (Sam4uk)</managingEditor>
     <webMaster>sto.ukr.net@gmail.com (Sam4uk)</webMaster>
     <copyright>©2019-2021, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Jul 2021 14:45:00 +0300</lastBuildDate>
     
         <atom:link href="http://sam4uk.site/en/series/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
-        <title>Linux</title>
-        <link>http://sam4uk.site/en/series/linux/</link>
-        <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+        <title>Themes Guide</title>
+        <link>http://sam4uk.site/en/series/themes-guide/</link>
+        <pubDate>Sat, 24 Jul 2021 14:45:00 +0300</pubDate>
         <author>sto.ukr.net@gmail.com (Sam4uk)</author>
         
-        <guid>http://sam4uk.site/en/series/linux/</guid>
+        <guid>http://sam4uk.site/en/series/themes-guide/</guid>
         <description></description>
         
         <dc:creator>Sam4uk</dc:creator>
@@ -39,12 +39,12 @@
       </item>
       
       <item>
-        <title>Themes Guide</title>
-        <link>http://sam4uk.site/en/series/themes-guide/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
+        <title>Linux</title>
+        <link>http://sam4uk.site/en/series/linux/</link>
+        <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
         <author>sto.ukr.net@gmail.com (Sam4uk)</author>
         
-        <guid>http://sam4uk.site/en/series/themes-guide/</guid>
+        <guid>http://sam4uk.site/en/series/linux/</guid>
         <description></description>
         
         <dc:creator>Sam4uk</dc:creator>

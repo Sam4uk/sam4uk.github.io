@@ -14,7 +14,7 @@
     <managingEditor>sto.ukr.net@gmail.com (Sam4uk)</managingEditor>
     <webMaster>sto.ukr.net@gmail.com (Sam4uk)</webMaster>
     <copyright>©2019-2021, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Jul 2021 14:45:00 +0300</lastBuildDate>
     
         <atom:link href="http://sam4uk.site/en/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -71,244 +71,11 @@
       </item>
       
       <item>
-        <title>Підкорюємо zsh</title>
-        <link>http://sam4uk.site/en/posts/oh_my_zsh/</link>
-        <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        <atom:modified>Sun, 20 Dec 2020 00:00:00 +0000</atom:modified>
-        <guid>http://sam4uk.site/en/posts/oh_my_zsh/</guid>
-        <description>Вступ Коли я працював з Win системами я не любив командного
-інтерфейсу, що пропонувався у цій системі. Командний
-рядок був монохромним та гнітючим - чорний та білий.
-Так&amp;hellip; Командний рядок можна тюнінгувати, але в дуже
-обмеженому діапазоні: змінити колір фону та шрифту,
-змінити розмір літер та їх гарнітуру і запрошення тай
-все.
-Я завжди боявся запускати на виконаня команди з cmd.
-Та взагалі вінда спонукає використовувати графічний
-інтерфейс. Майже все у вінді можна робити без</description>
-        
-        <dc:creator>Sam4uk</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>linux</category>
-            
-          
-            
-              <category>bash</category>
-            
-          
-            
-              <category>zsh</category>
-            
-          
-            
-              <category>terminal</category>
-            
-          
-        
-        
-          
-            
-              <category>tutorials</category>
-            
-          
-        
-        
-          
-            
-              <category>Linux</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>Ibus ти звідки взявся???</title>
-        <link>http://sam4uk.site/en/posts/zoom_ibus/</link>
-        <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
-        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        <atom:modified>Wed, 09 Dec 2020 00:00:00 +0000</atom:modified>
-        <guid>http://sam4uk.site/en/posts/zoom_ibus/</guid>
-        <description>Ibus ти звідки взявся??? Коли я встановив zoom в мене в системному лотку зник індикатор перемикача розкладки клавіатури та з&#39;явилася іконка якої там раніше не було. Після завершення zoom мітингу, я видалив зайву іконку . Ibus прощавай&amp;hellip; Та при черговій потребі запустити zoom у системі, я його не виявив. Довелося знову завантажувати пакет.
-І знову в ситемному лотку іконка якої там не повинно бути 😧
-Починаю гуглити. І&amp;hellip; перша ж стаття&amp;hellip;</description>
-        
-        <dc:creator>Sam4uk</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>zoom</category>
-            
-          
-            
-              <category>ibus</category>
-            
-          
-            
-              <category>linux</category>
-            
-          
-            
-              <category>mint</category>
-            
-          
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Десять кроків до особистого блогу на Github Pages.</title>
-        <link>http://sam4uk.site/en/posts/10-steps-to-bloging/</link>
-        <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        <atom:modified>Mon, 07 Dec 2020 00:00:00 +0000</atom:modified>
-        <guid>http://sam4uk.site/en/posts/10-steps-to-bloging/</guid>
-        <description>Крок перший. Підготовка інструментів. Крок другий. Репозиторій на Github. Настав час зареєструватися на GitHub, якщо ви цьго ще не зробили. Після створи репозиторій. Ім&#39;я репозиторію має відповідати шаблону &amp;lt;OWNER&amp;gt;.github.io, де &amp;lt;OWNER&amp;gt;, тут та надалі ім&#39;я твого облікового запису чи організації, якій належить репозиторій. Репозиторій має бути порожнім та публічним. Сняти галочку з Initialize this repository with a README, а перемикачі Add .gitgnore та Add a license виставити в положення None.</description>
-        
-        <dc:creator>Vitaly Khabarov</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>hugo</category>
-            
-          
-            
-              <category>github pages</category>
-            
-          
-            
-              <category>blog</category>
-            
-          
-            
-              <category>personal brand</category>
-            
-          
-        
-        
-          
-            
-              <category>hugo</category>
-            
-          
-            
-              <category>tutorials</category>
-            
-          
-        
-        
-          
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>Markdown синтаксис</title>
-        <link>http://sam4uk.site/en/posts/markdown-syntax/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
-        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        <atom:modified>Fri, 20 Dec 2019 12:00:06 +0900</atom:modified>
-        <guid>http://sam4uk.site/en/posts/markdown-syntax/</guid>
-        <description>&lt;p&gt;Ця стаття пропонує оглянути базові елементи синтаксису які можна використовувати в &lt;code&gt;Hugo&lt;/code&gt; файлах контенту, також демонструє базові HTML елемненти які оформлені каскадними таблицями стилів встановленої теми.&lt;/p&gt;</description>
-        
-        <dc:creator>Sam4uk</dc:creator>
-        <media:content url="http://sam4uk.site/images/feature1/markdown.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>markdown</category>
-            
-          
-            
-              <category>css</category>
-            
-          
-            
-              <category>html</category>
-            
-          
-            
-              <category>themes</category>
-            
-          
-        
-        
-          
-            
-              <category>themes</category>
-            
-          
-            
-              <category>syntax</category>
-            
-          
-        
-        
-          
-            
-              <category>Themes Guide</category>
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>Підсвідка синтаксису</title>
-        <link>http://sam4uk.site/en/posts/syntax-highlight/</link>
-        <pubDate>Wed, 18 Dec 2019 10:33:41 +0900</pubDate>
-        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        <atom:modified>Wed, 18 Dec 2019 10:33:41 +0900</atom:modified>
-        <guid>http://sam4uk.site/en/posts/syntax-highlight/</guid>
-        <description>Підсвідка синтаксису коду Diff 1 2 3 4 5 6 7 8 9 10  *** /path/to/original	&amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; --- /path/to/new	&amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line   *** /path/to/original	&amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; --- /path/to/new	&amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line.</description>
-        
-        <dc:creator>Sam4uk</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>hugo</category>
-            
-          
-        
-        
-          
-            
-              <category>hugo</category>
-            
-          
-        
-        
-          
-            
-              <category>DEMO</category>
-            
-          
-        
-      </item>
-      
-      <item>
         <title>Markdown базовий синтаксис</title>
         <link>http://sam4uk.site/en/posts/markdown-basic-syntax/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 24 Jul 2021 14:45:00 +0300</pubDate>
         <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        
+        <atom:modified>Sat, 24 Jul 2021 14:45:00 +0300</atom:modified>
         <guid>http://sam4uk.site/en/posts/markdown-basic-syntax/</guid>
         <description>&lt;h1 id=&#34;основний-синтаксис&#34;&gt;Основний синтаксис&lt;/h1&gt;
 &lt;p&gt;Елементи Markdown, викладені в проектному документі Джона Грубера&lt;/p&gt;
@@ -696,6 +463,239 @@
           
             
               <category>Themes Guide</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Підкорюємо zsh</title>
+        <link>http://sam4uk.site/en/posts/oh_my_zsh/</link>
+        <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        <atom:modified>Sun, 20 Dec 2020 00:00:00 +0000</atom:modified>
+        <guid>http://sam4uk.site/en/posts/oh_my_zsh/</guid>
+        <description>Вступ Коли я працював з Win системами я не любив командного
+інтерфейсу, що пропонувався у цій системі. Командний
+рядок був монохромним та гнітючим - чорний та білий.
+Так&amp;hellip; Командний рядок можна тюнінгувати, але в дуже
+обмеженому діапазоні: змінити колір фону та шрифту,
+змінити розмір літер та їх гарнітуру і запрошення тай
+все.
+Я завжди боявся запускати на виконаня команди з cmd.
+Та взагалі вінда спонукає використовувати графічний
+інтерфейс. Майже все у вінді можна робити без</description>
+        
+        <dc:creator>Sam4uk</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>linux</category>
+            
+          
+            
+              <category>bash</category>
+            
+          
+            
+              <category>zsh</category>
+            
+          
+            
+              <category>terminal</category>
+            
+          
+        
+        
+          
+            
+              <category>tutorials</category>
+            
+          
+        
+        
+          
+            
+              <category>Linux</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Ibus ти звідки взявся???</title>
+        <link>http://sam4uk.site/en/posts/zoom_ibus/</link>
+        <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        <atom:modified>Wed, 09 Dec 2020 00:00:00 +0000</atom:modified>
+        <guid>http://sam4uk.site/en/posts/zoom_ibus/</guid>
+        <description>Ibus ти звідки взявся??? Коли я встановив zoom в мене в системному лотку зник індикатор перемикача розкладки клавіатури та з&#39;явилася іконка якої там раніше не було. Після завершення zoom мітингу, я видалив зайву іконку . Ibus прощавай&amp;hellip; Та при черговій потребі запустити zoom у системі, я його не виявив. Довелося знову завантажувати пакет.
+І знову в ситемному лотку іконка якої там не повинно бути 😧
+Починаю гуглити. І&amp;hellip; перша ж стаття&amp;hellip;</description>
+        
+        <dc:creator>Sam4uk</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>zoom</category>
+            
+          
+            
+              <category>ibus</category>
+            
+          
+            
+              <category>linux</category>
+            
+          
+            
+              <category>mint</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Десять кроків до особистого блогу на Github Pages.</title>
+        <link>http://sam4uk.site/en/posts/10-steps-to-bloging/</link>
+        <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        <atom:modified>Mon, 07 Dec 2020 00:00:00 +0000</atom:modified>
+        <guid>http://sam4uk.site/en/posts/10-steps-to-bloging/</guid>
+        <description>Крок перший. Підготовка інструментів. Крок другий. Репозиторій на Github. Настав час зареєструватися на GitHub, якщо ви цьго ще не зробили. Після створи репозиторій. Ім&#39;я репозиторію має відповідати шаблону &amp;lt;OWNER&amp;gt;.github.io, де &amp;lt;OWNER&amp;gt;, тут та надалі ім&#39;я твого облікового запису чи організації, якій належить репозиторій. Репозиторій має бути порожнім та публічним. Сняти галочку з Initialize this repository with a README, а перемикачі Add .gitgnore та Add a license виставити в положення None.</description>
+        
+        <dc:creator>Vitaly Khabarov</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>hugo</category>
+            
+          
+            
+              <category>github pages</category>
+            
+          
+            
+              <category>blog</category>
+            
+          
+            
+              <category>personal brand</category>
+            
+          
+        
+        
+          
+            
+              <category>hugo</category>
+            
+          
+            
+              <category>tutorials</category>
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Markdown синтаксис</title>
+        <link>http://sam4uk.site/en/posts/markdown-syntax/</link>
+        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        <atom:modified>Fri, 20 Dec 2019 12:00:06 +0900</atom:modified>
+        <guid>http://sam4uk.site/en/posts/markdown-syntax/</guid>
+        <description>&lt;p&gt;Ця стаття пропонує оглянути базові елементи синтаксису які можна використовувати в &lt;code&gt;Hugo&lt;/code&gt; файлах контенту, також демонструє базові HTML елемненти які оформлені каскадними таблицями стилів встановленої теми.&lt;/p&gt;</description>
+        
+        <dc:creator>Sam4uk</dc:creator>
+        <media:content url="http://sam4uk.site/images/feature1/markdown.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>markdown</category>
+            
+          
+            
+              <category>css</category>
+            
+          
+            
+              <category>html</category>
+            
+          
+            
+              <category>themes</category>
+            
+          
+        
+        
+          
+            
+              <category>themes</category>
+            
+          
+            
+              <category>syntax</category>
+            
+          
+        
+        
+          
+            
+              <category>Themes Guide</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Підсвідка синтаксису</title>
+        <link>http://sam4uk.site/en/posts/syntax-highlight/</link>
+        <pubDate>Wed, 18 Dec 2019 10:33:41 +0900</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        <atom:modified>Wed, 18 Dec 2019 10:33:41 +0900</atom:modified>
+        <guid>http://sam4uk.site/en/posts/syntax-highlight/</guid>
+        <description>Підсвідка синтаксису коду Diff 1 2 3 4 5 6 7 8 9 10  *** /path/to/original	&amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; --- /path/to/new	&amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line. It is important to spell -removed line +new line   *** /path/to/original	&amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; --- /path/to/new	&amp;#39;&amp;#39;timestamp&amp;#39;&amp;#39; *************** *** 1 **** ! This is a line. --- 1 --- ! This is a replacement line.</description>
+        
+        <dc:creator>Sam4uk</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>hugo</category>
+            
+          
+        
+        
+          
+            
+              <category>hugo</category>
+            
+          
+        
+        
+          
+            
+              <category>DEMO</category>
             
           
         

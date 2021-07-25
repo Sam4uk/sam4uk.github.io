@@ -14,11 +14,47 @@
     <managingEditor>sto.ukr.net@gmail.com (Sam4uk)</managingEditor>
     <webMaster>sto.ukr.net@gmail.com (Sam4uk)</webMaster>
     <copyright>©2019-2021, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Jul 2021 14:45:00 +0300</lastBuildDate>
     
         <atom:link href="http://sam4uk.site/categories/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>syntax</title>
+        <link>http://sam4uk.site/categories/syntax/</link>
+        <pubDate>Sat, 24 Jul 2021 14:45:00 +0300</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        
+        <guid>http://sam4uk.site/categories/syntax/</guid>
+        <description></description>
+        
+        <dc:creator>Sam4uk</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>themes</title>
+        <link>http://sam4uk.site/categories/themes/</link>
+        <pubDate>Sat, 24 Jul 2021 14:45:00 +0300</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        
+        <guid>http://sam4uk.site/categories/themes/</guid>
+        <description></description>
+        
+        <dc:creator>Sam4uk</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>tutorials</title>
@@ -45,42 +81,6 @@
         <author>sto.ukr.net@gmail.com (Sam4uk)</author>
         
         <guid>http://sam4uk.site/categories/hugo/</guid>
-        <description></description>
-        
-        <dc:creator>Sam4uk</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>syntax</title>
-        <link>http://sam4uk.site/categories/syntax/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
-        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        
-        <guid>http://sam4uk.site/categories/syntax/</guid>
-        <description></description>
-        
-        <dc:creator>Sam4uk</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>themes</title>
-        <link>http://sam4uk.site/categories/themes/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
-        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        
-        <guid>http://sam4uk.site/categories/themes/</guid>
         <description></description>
         
         <dc:creator>Sam4uk</dc:creator>

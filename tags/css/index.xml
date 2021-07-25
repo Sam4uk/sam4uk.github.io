@@ -14,70 +14,18 @@
     <managingEditor>sto.ukr.net@gmail.com (Sam4uk)</managingEditor>
     <webMaster>sto.ukr.net@gmail.com (Sam4uk)</webMaster>
     <copyright>©2019-2021, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 20 Dec 2019 12:00:06 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 24 Jul 2021 14:45:00 +0300</lastBuildDate>
     
         <atom:link href="http://sam4uk.site/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
-        <title>Markdown синтаксис</title>
-        <link>http://sam4uk.site/posts/markdown-syntax/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
-        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        <atom:modified>Fri, 20 Dec 2019 12:00:06 +0900</atom:modified>
-        <guid>http://sam4uk.site/posts/markdown-syntax/</guid>
-        <description>&lt;p&gt;Ця стаття пропонує оглянути базові елементи синтаксису які можна використовувати в &lt;code&gt;Hugo&lt;/code&gt; файлах контенту, також демонструє базові HTML елемненти які оформлені каскадними таблицями стилів встановленої теми.&lt;/p&gt;</description>
-        
-        <dc:creator>Sam4uk</dc:creator>
-        <media:content url="http://sam4uk.site/images/feature1/markdown.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>markdown</category>
-            
-          
-            
-              <category>css</category>
-            
-          
-            
-              <category>html</category>
-            
-          
-            
-              <category>themes</category>
-            
-          
-        
-        
-          
-            
-              <category>themes</category>
-            
-          
-            
-              <category>syntax</category>
-            
-          
-        
-        
-          
-            
-              <category>Themes Guide</category>
-            
-          
-        
-      </item>
-      
-      <item>
         <title>Markdown базовий синтаксис</title>
         <link>http://sam4uk.site/posts/markdown-basic-syntax/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 24 Jul 2021 14:45:00 +0300</pubDate>
         <author>sto.ukr.net@gmail.com (Sam4uk)</author>
-        
+        <atom:modified>Sat, 24 Jul 2021 14:45:00 +0300</atom:modified>
         <guid>http://sam4uk.site/posts/markdown-basic-syntax/</guid>
         <description>&lt;h1 id=&#34;основний-синтаксис&#34;&gt;Основний синтаксис&lt;/h1&gt;
 &lt;p&gt;Елементи Markdown, викладені в проектному документі Джона Грубера&lt;/p&gt;
@@ -426,6 +374,58 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png&#34; alt=&#34;Tux&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;блоки-коду&#34;&gt;Блоки коду&lt;/h2&gt;</description>
+        
+        <dc:creator>Sam4uk</dc:creator>
+        <media:content url="http://sam4uk.site/images/feature1/markdown.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>markdown</category>
+            
+          
+            
+              <category>css</category>
+            
+          
+            
+              <category>html</category>
+            
+          
+            
+              <category>themes</category>
+            
+          
+        
+        
+          
+            
+              <category>themes</category>
+            
+          
+            
+              <category>syntax</category>
+            
+          
+        
+        
+          
+            
+              <category>Themes Guide</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Markdown синтаксис</title>
+        <link>http://sam4uk.site/posts/markdown-syntax/</link>
+        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
+        <author>sto.ukr.net@gmail.com (Sam4uk)</author>
+        <atom:modified>Fri, 20 Dec 2019 12:00:06 +0900</atom:modified>
+        <guid>http://sam4uk.site/posts/markdown-syntax/</guid>
+        <description>&lt;p&gt;Ця стаття пропонує оглянути базові елементи синтаксису які можна використовувати в &lt;code&gt;Hugo&lt;/code&gt; файлах контенту, також демонструє базові HTML елемненти які оформлені каскадними таблицями стилів встановленої теми.&lt;/p&gt;</description>
         
         <dc:creator>Sam4uk</dc:creator>
         <media:content url="http://sam4uk.site/images/feature1/markdown.png" medium="image"><media:title type="html">featured image</media:title></media:content>
