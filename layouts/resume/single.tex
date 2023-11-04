@@ -27,7 +27,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}                               % внутренняя T2A кодировка TeX
 \usepackage{tempora}
-\usepackage[ukrainian]{babel}                           % включение переносов
+\usepackage[english, russian, ukrainian]{babel}
+\usepackage{cmap}
+\usepackage{cyrtimes}
+% включение переносов
 % personal data
 {{ with .Params.header.infos }}
 \name{ {{ .name }} }{}
