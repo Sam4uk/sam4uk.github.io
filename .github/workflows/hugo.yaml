@@ -59,7 +59,13 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/" 
+
+      - name: pdf
+        run: |
+          pdflatex -output-directory=./public/resume --job-name=NAME  ./public/resume/cv_sam4uk_c_cpp_dev.tex
+          pdflatex -output-directory=./public/en/resume/ --job-name=NAME ./public/en/resume/cv_sam4uk_c_cpp_dev.tex
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

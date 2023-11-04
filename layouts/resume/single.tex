@@ -12,7 +12,7 @@
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
@@ -29,17 +29,18 @@
 \usepackage{tempora}
 \usepackage[ukrainian]{babel}                           % включение переносов
 % personal data
-{{ with .Params.header }}
-    {{ with .infos }}
+{{ with .Params.header.infos }}
 \name{ {{ .name }} }{}
-\title{C/C++ Developer}                                 % optional, remove / comment the line if not wanted
+{{ end }}
+\title{ {{ .Params.description }} } 
+{{ with .Params.header.infos }}                                % optional, remove / comment the line if not wanted
 \address{ {{ .addr }} }{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{ {{ .phone }} }                          % optional, remove / comment the line if not wanted
 %\phone[fixed]{01234 123456}                            % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                          % optional, remove / comment the line if not wanted
 \email{ {{ .email }} }                                  % optional, remove / comment the line if not wanted
-\homepage{ {{ .website }} }                             % optional, remove / comment the line if not wanted
-    {{ end }}
+\homepage{ {{ .website }} }
+                             % optional, remove / comment the line if not wanted
 {{ end }}
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{15850554.jpeg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
