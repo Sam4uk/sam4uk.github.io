@@ -1,0 +1,13 @@
+[en]
+  title = "Sam4uk"
+  languageName = "English"
+  weight = 1
+  languagedir = "ltr"
+  contentdir = "content/en"
+
+[uk]
+  title = "Sam4uk"
+  languageName = "Українська"
+  weight = 2
+  languagedir = "ltr"
+  contentdir = "content/uk"
