@@ -20,7 +20,7 @@ series:
 image: images/feature1/markdown.png
 ---
 
-
+<!-- https://stymied.medium.com/lightweight-markup-asciidoc-restructuredtext-and-markdown-compared-d5a33fedcac9 -->
 
 {{< tabs Markdown AsciiDoc reStructuredText >}}
   {{< tab >}}
