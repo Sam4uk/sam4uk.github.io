@@ -4,7 +4,7 @@ date: 2023-11-11T12:00:06+09:00
 publish : 2023-11-11
 weight: 2
 description: Моє власне ядро для Arduino
-draft: true
+draft: false
 hideToc: false
 enableToc: true
 enableTocContent: true
