@@ -65,7 +65,6 @@ jobs:
           sudo apt-get update  && sudo apt-get install -y texlive-full texlive texlive-publishers texlive-science latexmk cm-super texlive-latex-base texlive-lang-cyrillic
           sudo apt-get install ttf-mscorefonts-installer 
           sudo apt-get install -f
-          sudo tlmgr install sourcesanspro
       - name: pdf
         run: |
           pdflatex -output-directory=./public/resume --job-name=NAME  ./public/resume/cv_sam4uk_c_cpp_dev.tex
