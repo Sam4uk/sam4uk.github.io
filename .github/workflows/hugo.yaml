@@ -60,12 +60,12 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" 
-      # - name: pdf
-        # run: sudo apt-get update  && sudo apt-get install -y texlive texlive-publishers texlive-science latexmk cm-super texlive-latex-base texlive-lang-cyrillic scalable-cyrfonts-tex
-      # - name: pdf
-        # run: |
-          # pdflatex -output-directory=./public/resume --job-name=NAME  ./public/resume/cv_sam4uk_c_cpp_dev.tex
-          # pdflatex -output-directory=./public/en/resume/ --job-name=NAME ./public/en/resume/cv_sam4uk_c_cpp_dev.tex
+      - name: pdf
+        run: sudo apt-get update  && sudo apt-get install -y texlive texlive-publishers texlive-science latexmk cm-super texlive-latex-base texlive-lang-cyrillic scalable-cyrfonts-tex
+      - name: pdf
+        run: |
+          pdflatex -output-directory=./public/resume --job-name=NAME  ./public/resume/cv_sam4uk_c_cpp_dev.tex
+          pdflatex -output-directory=./public/en/resume/ --job-name=NAME ./public/en/resume/cv_sam4uk_c_cpp_dev.tex
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
