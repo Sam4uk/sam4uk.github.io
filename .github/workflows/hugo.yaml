@@ -62,7 +62,7 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/" 
       - name: pdf
         run: |
-          sudo apt-get update  && sudo apt-get install -y texlive texlive-fonts-extra texlive-publishers texlive-science latexmk cm-super texlive-latex-base texlive-lang-cyrillic scalable-cyrfonts-tex
+          sudo apt-get update  && sudo apt-get install -y texlive texlive-publishers texlive-science latexmk cm-super texlive-latex-base texlive-lang-cyrillic scalable-cyrfonts-tex
           sudo tlmgr install tempora
       - name: pdf
         run: |
