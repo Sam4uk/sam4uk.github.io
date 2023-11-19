@@ -1,222 +1,175 @@
 %-------------------------
-% Rezume, a latex resume template for developers
-% Author : Nanu Panchamurthy
-% Based off of: https://github.com/sb2nov/resume
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
 % License : MIT
-% https://www.overleaf.com/project/6555227ca601c30288768330
-% Hope this resume template helps you land an awesome job. If you found this helpful, please consider starring the github repo here, .
-%-------------------------
+%------------------------
 
+\documentclass[letterpaper,11pt]{article}
 
+\usepackage{type1ec}                  % для автоматичної інсталяції cm-super під miktex (використання шрифтів довільного розміру).
+\usepackage{mathtext}                 % підключення кирилиці у математичних формулах
+                                      % (mathtext.sty входить в пакет t2).
 
-\documentclass[a4paper,11pt]{article}
-%------------PACKAGES----------------
+\usepackage[cp1251]{inputenc}         % кодування документа; замість cp1251
+                                      % може бути cp866nav, koi8-u, macukr, iso88595, utf8.
+ 
+
 
 \usepackage{import}
 \usepackage[utf8]{inputenc}
-\usepackage[T2A,T1]{fontenc}
+\usepackage[T1,T2A]{fontenc}          % внутрішнє кодування шрифтів (може бути декілька);
+                                      % вказане останнім діє по замовчуванню;
+                                      % кириличне має співпадати з заданим в ukrhyph.tex.
 \usepackage[T2B]{fontenc} 
 \usepackage[T2C]{fontenc}                              % внутренняя T2A кодировка TeX
 % \usepackage{tempora}
-\usepackage[english, ukrainian]{babel}
+\usepackage[english,ukrainian]{babel} % національна локалізація; може бути декілька
+                                      % мов; остання з переліку діє по замовчуванню.
 \usepackage{cmap}
 % \usepackage{cyrtimes}
 
-\usepackage{lmodern} % або інший шрифт, який підтримує T2B
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
 
-\usepackage{verbatim} % reimplements the "verbatim" and "verbatim*" environments
+\input{glyphtounicode}
 
-\usepackage{titlesec} % provides an interface to sectioning commands i.e. custom elements
-
-\usepackage{color} % provides both foreground and background color management
-
-\usepackage{enumitem} % provides control over enumerate, itemize and description
-
-\usepackage{fancyhdr} % provides extensive facilities for constructing headers, footers and also controlling their use
-
-\usepackage{tabularx} % defines an environment tabularx, extension of "tabular" with an extra designator x, paragraph like column whose width automatically expands to fill the width of the environment
-
-% \usepackage{latexsym} % provides mathematical symbols
-
-\usepackage{marvosym} % provides martin vogel's symbol font which contains various symbols
-
-\usepackage[empty]{fullpage} % sets margins to one inch and removes headers, footers etc..
-
-\usepackage[hidelinks]{hyperref} % removes color and shadow of hyperlinks
-
-\usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
-
-% \usepackage[english, russian, ukrainian]{babel} % provides culturally determined typographical rules for wide range of languages
-%-----------------------------------------
-
-\input glyphtounicode % converts glyph names to unicode
-\pdfgentounicode=1 % ensures pdfs generated are ats readable
-
-%----------FONT OPTIONS-------------------
-\usepackage[default]{sourcesanspro} % uses the font source sans pro
-
-
-\urlstyle{same} % changes url font from default urlfont to font being used by the document
-%-----------------------------------------
-
-
-%----------MARGIN OPTIONS-----------------
-\pagestyle{fancy} % set page style to one configured by fancyhdr
+% -------------------- FONT --------------------
+\pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-\renewcommand{\headrulewidth}{0in} % sets thickness of linerule under header to zero
-\renewcommand{\footrulewidth}{0in} % sets thickness of linerule over footer to zero
-
-\setlength{\tabcolsep}{0in} % sets thickness of column separator in tables to zero
-
-% origin of the document is one inch from the top and from and the left
-% oddsidemargin and evensidemargin both refer to the left margin
-% right margin is indirectly set using oddsidemargin
+% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\topmargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
 
-\addtolength{\textwidth}{1.0in} % sets width of text area in the page to one inch
-\addtolength{\textheight}{1.0in} % sets height of text area in the page to one inch
+\urlstyle{same}
 
-\raggedbottom{} % makes all pages the height of current page, no extra vertical space added
-\raggedright{} % makes all pages the width of current page, no extra horizontal space added
-%------------------------------------------
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-%--------SECTIONING COMMANDS---------
-% \titleformat{<command>}
-%   [<shape>]{<format>}{<label>}{<sep>}
-%     {<before-code>}[<after-code>]
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
 
-% command is the sectioning command to be redefined
-% shape is the style of the font; scshape stands for small caps style
-% format is the format to be applied to whole title- label and text; absent here
-% label defines the label
-% sep is the horizontal separation between label and title body
-% before-code is the code to be executed before
-% after-code is the code to be executed after
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
 
-\titleformat{\section}
-  {\scshape\large}{}
-    {0em}{\color{blue}}[\color{black}\titlerule\vspace{0pt}]
-%-------------------------------------
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
 
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-%--------REDEFINITIONS----------------
-% redefines the style of the bullet point
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-% redefines the underline depth to 2pt
-\renewcommand{\ULdepth}{2pt}
-%-------------------------------------
+\setlength{\footskip}{4.08003pt}
 
-
-%--------CUSTOM COMMANDS--------------
-%\vspace{} defines a vertical space of given size, modifying this in custom commands can help stretch or shrink resume to remove or add content
-
-% resumeItem renders a bullet point
-\newcommand{\resumeItem}[1]{
-  \item\small{#1}
-}
-
-% commands to start and end itemization of resumeItem, rightmargin set to 0.11in to avoid the overflow of resumetItem beyond whatever resumeItemHeading is being used
-\newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=0.11in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}}
-
-% resumeSectionType renders a bolded type to be used under a section, used as skill type here, middle element is used to keep ":"s in the same vertical line
-\newcommand{\resumeSectionType}[3]{
-  \item\begin{tabular*}{0.96\textwidth}[t]{
-    p{0.15\linewidth}p{0.02\linewidth}p{0.81\linewidth}
-  }
-    \textbf{#1} & #2 & #3
-  \end{tabular*}\vspace{-2pt}
-}
-
-% resumeTrioHeading renders three elements in three columns with second element being italicized and first element bolded, can be used for projects with three elements
-\newcommand{\resumeTrioHeading}[3]{
-  \item\small{
-    \begin{tabular*}{0.96\textwidth}[t]{
-      l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r
-    }
-      \textbf{#1} & \textit{#2} & #3
-    \end{tabular*}
-  }
-}
-
-% resumeQuadHeading renders four elements in a two columns with the second row being italicized and first element of first row bolded, can be used for experience and projects with four elements
-\newcommand{\resumeQuadHeading}[4]{
-  \item
-  \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & #2 \\
-    \textit{\small#3} & \textit{\small #4} \\
-  \end{tabular*}
-}
-
-% resumeQuadHeadingChild renders the second row of resumeQuadHeading, can be used for experience if different roles in the same company need to added
-\newcommand{\resumeQuadHeadingChild}[2]{
-  \item
-  \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{\small#1} & {\small#2} \\
-  \end{tabular*}
-}
-
-% commands to start and end itemization of resumeQuadHeading, lefmargin for left indent of 0.15in for resumeItems
-\newcommand{\resumeHeadingListStart}{
-  \begin{itemize}[leftmargin=0.15in, label={}]
-}
-\newcommand{\resumeHeadingListEnd}{\end{itemize}}
-%-------------------------------------------
-
-
-%__________________RESUME____________________
-% You can rearrange sections in any order you may prefer
+% -------------------- START OF DOCUMENT --------------------
 \begin{document}
-%-----------CONTACT DETAILS------------------
-% Make sure all the details are correct, you can add more links in the first row of second column if needed
 
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    % personal data
-    {{ with .Params.header.infos }}
-  \textbf{\Huge  {{ .name }}  \vspace{2pt}} & % row = 1, col = 1
+% -------------------- HEADING--------------------
+\begin{flushright}
+  \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on {{ time.Now | time.Format "Jan 2006" }}
+\end{flushright}
+
+\vspace{-7pt}
+
+\begin{center}
+  {{ with .Params.header.infos }}
+    \textbf{\Huge \scshape {{ .name }} } \\ \vspace{8pt}
   {{ end }}
-{{ with .Params.header.infos }}  
-%   Location: Anycity, Anystate, Anycountry 
-   \\ % row = 1, col = 2
-{{ if .title }}{{ .title }}{{ end }}
-  \href{ {{ .website }} }{\uline{ {{ .website }} }} $|$ % row = 2, col = 1
-  {{ if .email }} Email: \href{mailto:  {{ .email }} }{\uline{ {{ .email }} }}{{ end }} $|$ % row = 2, col = 2
-  Mobile:  {{ .phone }}  \\ % row = 2, col = 2
-{{ end }}
-\end{tabular*}
-%--------------------------------------------
+    \small 
+    {{ with .Params.header.infos }}  
+    \faIcon{github}
+    \href{https://github.com/Sam4uk}{\underline{github.com/Sam4uk}} $  $
+    \faIcon{code}
+    \href{ {{ .website }} }
+    {\underline{ {{ .website }} }} $  $
+    % \faIcon{linkedin}
+    % \href{https://linkedin.com/in/johndoe}{\underline{linkedin.com/in/johndoe}} $  $
+      {{ if .email }}
+        \faIcon{envelope}
+        \href{mailto:{{ .email }}}
+        {\underline{ {{ .email }} }} $  $
+      {{ end }}
+  
+    {{ end }}
+\end{center}
 
-%-----------SUMMARY--------------------------
-% Keep this short, simple and straigth to point
-
-\section{ {{ .Params.description }} }
-\small{
-  I am a highly skilled web developer with over \textbf{3 years of experience} in \textbf{HTML, CSS, JavaScript, and PHP}. I have knowledge of popular frameworks such as \textbf{React, Angular, and Vue.js} and experience with REST APIs and MVC frameworks.
-}
-%--------------------------------------------
-
-
-
-
+% { {{ .Params.description }} }
+\vspace{7pt}
 {{ range .Params.items }}
 %=======================================================================
 %  {{ .title }}
 %=======================================================================
 \section{ {{ .title }} }
-\resumeHeadingListStart{}
-{{ range .sections }}
-  \resumeQuadHeading{ {{ if .title }}{{ .title }}{{ end }} }{ {{ if .startDate }}{{ .startDate }}{{ end }} {{ if .endDate }}  --  {{ .endDate }}{{ end }} }
-  { }{ {{ if .subtitle }}{{ .subtitle }}{{ end }} }
-    \resumeItemListStart{}
-      \resumeItem{ {{ .contents }} }
-    \resumeItemListEnd{}
-    {{ end }}
-\resumeHeadingListEnd{}
+  \resumeSubHeadingListStart
+  {{ range .sections }}
+        \resumeProjectHeading
+        {\textbf{ {{ if .title }}{{ .title }}{{ end }} }{{ if .subtitle }}\vspace{8pt} $|$ \footnotesize\emph{ {{ .subtitle }} }{{ end }}}{ {{ if .startDate }}{{ .startDate }}{{ end }}  {{ if .endDate }}  --  {{ .endDate }}{{ end }} }
+          {\small{ {{ .contents }} }}
+    {{ end }}         
+    \resumeSubHeadingListEnd 
 
+%-----------------------------------------------------------------------
+%  {{ .title }}
+%-----------------------------------------------------------------------
 {{ end }}
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 \end{document}

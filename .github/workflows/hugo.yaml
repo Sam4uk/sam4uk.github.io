@@ -69,10 +69,10 @@ jobs:
           sudo apt-get install -f
       - name: pdf UKR
         run: |
-          latex -output-directory=./public/resume --job-name=NAME  ./public/resume/cv_sam4uk_c_cpp_dev.tex || echo "UKR ERROR"
+          pdflatex -output-directory=./public/resume --job-name=NAME  ./public/resume/cv_sam4uk_c_cpp_dev.tex || echo "UKR ERROR"
       - name: pdf ENG
         run: |
-          latex -output-directory=./public/en/resume/ --job-name=NAME ./public/en/resume/cv_sam4uk_c_cpp_dev.tex || echo "ENG ERROR"
+          pdflatex -output-directory=./public/en/resume/ --job-name=NAME ./public/en/resume/cv_sam4uk_c_cpp_dev.tex || echo "ENG ERROR"
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
