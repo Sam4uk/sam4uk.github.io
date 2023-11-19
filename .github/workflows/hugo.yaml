@@ -67,10 +67,12 @@ jobs:
             texlive-latex-base texlive-lang-cyrillic
           sudo apt-get install ttf-mscorefonts-installer 
           sudo apt-get install -f
-      - name: pdf
+      - name: pdf UKR
         run: |
-          latex -output-directory=./public/resume --job-name=NAME  ./public/resume/cv_sam4uk_c_cpp_dev.tex
-          latex -output-directory=./public/en/resume/ --job-name=NAME ./public/en/resume/cv_sam4uk_c_cpp_dev.tex
+          latex -output-directory=./public/resume --job-name=NAME  ./public/resume/cv_sam4uk_c_cpp_dev.tex || echo "UKR ERROR"
+      - name: pdf ENG
+        run: |
+          latex -output-directory=./public/en/resume/ --job-name=NAME ./public/en/resume/cv_sam4uk_c_cpp_dev.tex || echo "ENG ERROR"
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
