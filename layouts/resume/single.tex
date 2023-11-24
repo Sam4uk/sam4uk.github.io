@@ -11,20 +11,22 @@
 \usepackage{mathtext}                 % підключення кирилиці у математичних формулах
                                       % (mathtext.sty входить в пакет t2).
 
-\usepackage[cp1251]{inputenc}         % кодування документа; замість cp1251
-                                      % може бути cp866nav, koi8-u, macukr, iso88595, utf8.
+% \usepackage[cp1251]{inputenc}         % кодування документа; замість cp1251
+%                                       % може бути cp866nav, koi8-u, macukr, iso88595, utf8.
  
 
 
 \usepackage{import}
-\usepackage[utf8]{inputenc}
-\usepackage[T1,T2A]{fontenc}          % внутрішнє кодування шрифтів (може бути декілька);
-                                      % вказане останнім діє по замовчуванню;
-                                      % кириличне має співпадати з заданим в ukrhyph.tex.
-\usepackage[T2B]{fontenc} 
-\usepackage[T2C]{fontenc}                              % внутренняя T2A кодировка TeX
+\usepackage[utf8, cp1251]{inputenc}
+% \usepackage[utf8]{inputenc}
+\usepackage[T2A, T1]{fontenc}          % внутрішнє кодування шрифтів (може бути декілька);
+%                                       % вказане останнім діє по замовчуванню;
+%                                       % кириличне має співпадати з заданим в ukrhyph.tex.
+% \usepackage[T2B]{fontenc} 
+% \usepackage[T2C]{fontenc}                              % внутренняя T2A кодировка TeX
 % \usepackage{tempora}
-\usepackage[english,ukrainian]{babel} % національна локалізація; може бути декілька
+% \setmainfont{Liberation Serif}
+\usepackage[russian,ukrainian,english]{babel} % національна локалізація; може бути декілька
                                       % мов; остання з переліку діє по замовчуванню.
 \usepackage{cmap}
 % \usepackage{cyrtimes}
@@ -38,7 +40,6 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
