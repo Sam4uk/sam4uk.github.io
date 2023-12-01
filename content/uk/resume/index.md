@@ -12,7 +12,9 @@ header:
     alt: "Моє фото для резюме"
   infos:
     name: "Самчук Тарас Олександрович"
-    # email: "sam4uk.site@gmail.com" 
+    github: Sam4uk
+    email: "sam4uk.site@gmail.com" 
+    linkedin: sam4uk
     phone: "+38 (063) 76543 87"
     website: "https://sam4uk.github.io/"
     addr: Vyshgorod

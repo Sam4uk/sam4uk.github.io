@@ -1,35 +1,13 @@
 %-------------------------
 % Resume in Latex
-% Author : Matty
-% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
 % License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{type1ec}                  % для автоматичної інсталяції cm-super під miktex (використання шрифтів довільного розміру).
-\usepackage{mathtext}                 % підключення кирилиці у математичних формулах
-                                      % (mathtext.sty входить в пакет t2).
-
-% \usepackage[cp1251]{inputenc}         % кодування документа; замість cp1251
-%                                       % може бути cp866nav, koi8-u, macukr, iso88595, utf8.
- 
-
-
-\usepackage{import}
-\usepackage[utf8, cp1251]{inputenc}
-% \usepackage[utf8]{inputenc}
-\usepackage[T2A, T1]{fontenc}          % внутрішнє кодування шрифтів (може бути декілька);
-%                                       % вказане останнім діє по замовчуванню;
-%                                       % кириличне має співпадати з заданим в ukrhyph.tex.
-% \usepackage[T2B]{fontenc} 
-% \usepackage[T2C]{fontenc}                              % внутренняя T2A кодировка TeX
-% \usepackage{tempora}
-% \setmainfont{Liberation Serif}
-\usepackage[russian,ukrainian,english]{babel} % національна локалізація; може бути декілька
-                                      % мов; остання з переліку діє по замовчуванню.
-\usepackage{cmap}
-% \usepackage{cyrtimes}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ukrainian]{babel}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -41,12 +19,23 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{tabularx}
-\usepackage{xcolor}
-\usepackage{fontawesome5}
-
+\usepackage{hyphenat}
+\usepackage{fontawesome}
 \input{glyphtounicode}
 
-% -------------------- FONT --------------------
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -57,7 +46,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -66,25 +55,28 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Section formatting
+% Sections formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Subsection formatting
-\titleformat{\subsection}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+% % Subsection formatting
+% \titleformat{\subsection}{
+%   \vspace{-4pt}\scshape\raggedright\large
+% }{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-% -------------------- CUSTOM COMMANDS --------------------
+%-------------------------
+% Custom commands
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
   }
 }
+
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -94,84 +86,136 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+
 \newcommand{\resumeSubSubheading}[2]{
-    \item
+    \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
 \newcommand{\resumeProjectHeading}[2]{
-    \item
+    \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setlength{\footskip}{4.08003pt}
+% \setlength{\footskip}{4.08003pt}
 
-% -------------------- START OF DOCUMENT --------------------
 \begin{document}
 
-% -------------------- HEADING--------------------
-\begin{flushright}
-  \vspace{-4pt}
-  \color{gray}
-  \item
-  Last Updated on {{ time.Now | time.Format "Jan 2006" }}
-\end{flushright}
+%---------- HEADING ----------
 
-\vspace{-7pt}
 
+% \vspace{-7pt}
 \begin{center}
   {{ with .Params.header.infos }}
-    \textbf{\Huge \scshape {{ .name }} } \\ \vspace{8pt}
+    \textbf{\Huge \scshape {{ .name }} } \\ \vspace{3pt}
   {{ end }}
-    \small 
-    {{ with .Params.header.infos }}  
-    \faIcon{github}
-    \href{https://github.com/Sam4uk}{\underline{github.com/Sam4uk}} $  $
-    \faIcon{code}
-    \href{ {{ .website }} }
-    {\underline{ {{ .website }} }} $  $
-    % \faIcon{linkedin}
-    % \href{https://linkedin.com/in/johndoe}{\underline{linkedin.com/in/johndoe}} $  $
-      {{ if .email }}
-        \faIcon{envelope}
-        \href{mailto:{{ .email }}}
-        {\underline{ {{ .email }} }} $  $
-      {{ end }}
+    \textbf{\scshape {{ .Params.title }} } \\ \vspace{3pt}
+    \small
+    {{ with .Params.header.infos }}{{ if .github}} 
+    \faGithub \hspace{.5pt}
+    \href{https://github.com/{{.github}} }{GitHub}
+    $|${{ end }}{{ if .website}} 
+    \faGlobe \hspace{.5pt} \href{ {{ .website }} }{ {{ .website }} }
+    $|${{ end }}{{ if .phone}} 
+    \faMobile \hspace{.5pt} \href{tel:{{.phone}} }{ {{.phone}} }
+    $|${{ end }}{{ if  .email}} 
+    \faAt \hspace{.5pt} \href{mailto:{{ .email }} }{ {{ .email }} }
+    $|${{ end }}{{ if .linkedin}} 
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/{{ .linkedin }}}{LinkedIn}
+    % $|${{ end }}{{ if .gmap}} 
+    % \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Bogazici+University+North+Campus/@41.0863067,29.0441352,15z/data=!4m5!3m4!1s0x0:0x9d2497b07c8edb2f!8m2!3d41.0863067!4d29.0441352}{Istanbul, Turkey}
+    {{ end }}{{ end }}
+  \end{center}
   
-    {{ end }}
-\end{center}
-
 % { {{ .Params.description }} }
-\vspace{7pt}
-{{ range .Params.items }}
+% \vspace{7pt}
+% {{ range .Params.items }}
 %=======================================================================
 %  {{ .title }}
 %=======================================================================
 \section{ {{ .title }} }
+  \vspace{3pt}
   \resumeSubHeadingListStart
   {{ range .sections }}
-        \resumeProjectHeading
-        {\textbf{ {{ if .title }}{{ .title }}{{ end }} }{{ if .subtitle }}\vspace{8pt} $|$ \footnotesize\emph{ {{ .subtitle }} }{{ end }}}{ {{ if .startDate }}{{ .startDate }}{{ end }}  {{ if .endDate }}  --  {{ .endDate }}{{ end }} }
-          {\small{ {{ .contents }} }}
-    {{ end }}         
-    \resumeSubHeadingListEnd 
+    \resumeEducationHeading
+      { {{ if .title }}{{ .title }}{{ end }} 
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{ {{ if .subtitle }} {{ .subtitle }} {{ end }} }
+      {
+        % B.Sc. in Electrical and Electronics Engineering;   \textbf{GPA: 3.62/4.00}
+        }{ {{ if .startDate }}{{ .startDate }}{{ end }}  {{ if .endDate }} \textbf{--} {{ .endDate }}{{ end }} }
+      {
+      %   Minor Degree in Computer Engineering;
+      % \textbf{GPA: 3.58/4.00}
+      }{
+        % Oct 2020 \textbf{--} Jun 2023
+        }
+        \resumeSubHeadingListStart
+        \small{\item{
+          {{ .contents }}
+            % \textbf{Relevant coursework:} Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision
+            % Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (Jul 2018)
+            }
+            }
+        \resumeSubHeadingListEnd
+    
+    % \resumeSubheading
+      % {Kocaeli Science High School
+      % \normalfont{(Admission rate: 0.85\%)}
+      % }{Kocaeli, Turkey}
+      % {High School Diploma;   \textbf{GPA: 97.03/100}}{Sep 2014 \textbf{--} Jun 2018}
+    {{ end }}
+  \resumeSubHeadingListEnd
 
 %-----------------------------------------------------------------------
 %  {{ .title }}
 %-----------------------------------------------------------------------
 {{ end }}
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+% \vspace{40pt}
+% \begin{flushright}
+%   \vspace{-4pt}
+%   % \color{gray}
+%   \item
+%   Last Updated on {{ .Params.date }}
+%   \item
+%   Last Updated on {{ time.Now | time.Format "01-01-2006" }}
+% \end{flushright}
 \end{document}
 %% end of file `template.tex'.
