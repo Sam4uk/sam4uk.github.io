@@ -4,7 +4,7 @@ date: 2023-11-24
 publish : 2023-11-24
 weight: 2
 description: Народження компактного дрона
-draft: false
+draft: true
 hideToc: false
 enableToc: true
 enableTocContent: true
