@@ -1,4 +1,4 @@
-УlogoText = "Sam4uk"
+logoText = "Sam4uk"
 logoType = "short" # long, short
 logo = false # Logo that appears in the site navigation bar.
 description = "Я не ставлю перед собою мету комусь і щось донести через мережу."
