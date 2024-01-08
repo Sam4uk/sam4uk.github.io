@@ -164,7 +164,7 @@ commento = false
   dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions]
-#  email = "mailto:your@email.com"
+  email = "mailto:sam4uk.site@email.com"
 #  phone = ""
   facebook = "http://facebook.com/sam4uk/"
  # twitter = "http://example.org/"
@@ -175,7 +175,7 @@ commento = false
 #  youtube = "#"
 #  medium = "#"
 #  tumblr = "#"
-#  linkedin = "#"
+ linkedin = "sam4uk"
 #  pinterest = "#"
 #  stack-exchange = "#"
   telegram = "tg:@Sam4ukT"
@@ -187,7 +187,7 @@ commento = false
 #  mastodon = "#"
 ##  jianshu = "#"
 ##  zhihu = "#"
-##  signal = "#"
+  signal = "sam4uk"
 #  whatsapp = "#"
 #  matrix = "#"
 #  xmpp = "#"
