@@ -1,3 +1,4 @@
+#
 logoText = "Sam4uk"
 logoType = "short" # long, short
 logo = false # Logo that appears in the site navigation bar.
