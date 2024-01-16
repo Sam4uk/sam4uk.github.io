@@ -2,6 +2,7 @@
 title: STM8
 date: 2024-01-15
 publish : 2024-01-15
+lastmod: 2024-01-17T00:15:00
 description: Мій перший восьми бітний STM
 draft: false
 hideToc: false
@@ -120,7 +121,7 @@ stm.c:1: error 74: function 'main' undefined
 ```c
 void main(void){};
 ```
-```
+<!--```
 syntax error: token -> ';' ; column 18
 ```
 
@@ -135,7 +136,25 @@ warning 283: function declarator with no prototype
 int main(void){return 0;}
 ```
 Після чергового згодовування файлу компілятору він нас не обматюкав і згенерував багато файлів. Можна діставати плату з "бардачка" 
+-->
 
 ## Знайомство з платою
 
-![](https://blog.nubix.de/wp-content/uploads/2018/09/DSCF0733-Kopie.jpg)
+### STM8L-DISCOVERY
+
+Я колись давно придбав собі плату `STM8L-DISCOVERY` з якої хотів почати своє самостійне знайомство з контролерами `STM`. Нарешті настав її час.
+
+`STM8L-DISCOVERY` зібрана на базі мікроконтролера `STM8L152C6T6` і має вбудований інтерфейс відлагодження `ST-Link`, рідкокристалічний дисплей, користувацьку кнопку та світлодіод. 
+
+![](https://www.st.com/bin/ecommerce/api/image.PF250636.en.feature-description-include-personalized-no-cpn-large.jpg)
+
+Сам мікроконтролер наділений `32KB` Flash, `2KB` оперативної пам'яті та `1KB` енергонезалежної пам'яті. Може працювати при напрузі джерала живлення від `1.8V`  до  `3.6V` працюючи на частоті `16MHz` і маючи при цьому 5 варіантів роботи в режимі енергозбереження. Виробники запхнули в нього 12 бітний цифроан-алоговий перетворювач та 12 бітний 25 канальний аналогово-цифровий перетворювач з можливістю робити `1M` замірів за секунду.
+
+Про всі інші можливості можна дізнатися з даташиту на мікроконтреллери [STM8L151x4, STM8L151x6,STM8L152x4, STM8L152x6](https://www.st.com/content/ccc/resource/technical/document/datasheet/43/12/db/4c/8b/08/4a/73/CD00240181.pdf/files/CD00240181.pdf/jcr:content/translations/en.CD00240181.pdf)
+
+Ось ще корисна інформація про плату розробки
+ 1. [STM8L ultralow power Discovery](https://www.st.com/resource/en/data_brief/stm8l-discovery.pdf)
+ 2. [STM8L-DISCOVERY](https://www.st.com/resource/en/user_manual/um0970-stm8ldiscovery-stmicroelectronics.pdf)
+ 3. [STM8L-DISCOVERY schematics](https://www.st.com/resource/en/schematic_pack/stm8l-discovery_sch.zip)
+ 4. [StdPeriph_Driver](https://www.st.com/content/ccc/resource/technical/software/firmware/fa/a9/6b/87/95/c2/4a/b4/stsw-stm8016.zip/files/stsw-stm8016.zip/jcr:content/translations/en.stsw-stm8016.zip)
+ 5. [st.com](https://www.st.com/en/evaluation-tools/stm8l-discovery.html)
