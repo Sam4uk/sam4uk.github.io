@@ -2,7 +2,7 @@
 title: STM8
 date: 2024-01-15
 publish : 2024-01-15
-lastmod: 2024-01-17T00:15:00
+lastmod: 2024-01-19T00:15:00
 description: Мій перший восьми бітний STM
 draft: false
 hideToc: false
@@ -139,7 +139,7 @@ int main(void){return 0;}
 ```
 Після чергового згодовування файлу компілятору він нас не обматюкав і згенерував багато файлів. Можна діставати плату з "бардачка" 
 -->
-А ще карще почитажмо [інструкцію](https://sdcc.sourceforge.net/doc/sdccman.pdf)
+А ще карще почитаємо [інструкцію](https://sdcc.sourceforge.net/doc/sdccman.pdf)
 
 ### STM8FLASH
 
@@ -201,3 +201,53 @@ sudo apt-get install -y cmake
  3. [STM8L-DISCOVERY schematics](https://www.st.com/resource/en/schematic_pack/stm8l-discovery_sch.zip)
  4. [StdPeriph_Driver](https://www.st.com/content/ccc/resource/technical/software/firmware/fa/a9/6b/87/95/c2/4a/b4/stsw-stm8016.zip/files/stsw-stm8016.zip/jcr:content/translations/en.stsw-stm8016.zip)
  5. [st.com](https://www.st.com/en/evaluation-tools/stm8l-discovery.html)
+   
+### Pin-control
+
+Основана робота з портами введення виведння ведеться через п'ять регістрів на кожен порт. Ось вони
+ - `Px_ODR` - _Port x output data register_. Регістр для виведення даних(аналог PORTx у AVRках). Якщо порт сконфігкрований на вихід, то запис в цей порт змінить електичний стан відповідної ніжки чіпа
+ - `Px_IDR` - _Port x input data register_. Регістр читання даних (PINx у AVRках)
+ - `Px_DDR` - _Port x data direcrion register_. Регістр визначає напрямок роботи порту. При низькому рівні в цьому регістрі, відповідний пін налаштований на вхід.
+ - `Px_CR1` - _Port x control register 1_. Електричні властивості порту. Якщо пін налаштований на вхід запис `1` в цей регіст вмикає `pull_up` резистор в середині чіпа інакше вивід отримує `Z` стан (плаваючий). Якщо пін налаштваний на вихід то `1` в цьому регістрі вмикає `push-pull` режим, інакше ніжка працює як відкритий колектор.
+ - `Px_CR2` - _Port x control register 2_. Якщо пін налаштовано на вхід `1` дозволяє генерацію зовнішнього переривання на піні, інакше таке заборонено. Якщо пін працює на виввід то запис `1` обмежує швидкість перемикання піна до 10 MHz, інакше - 2 MHz.
+  
+#### Дрик-Дрик ножкою
+
+Спробуємо подригати ніжкою мікрокоторлеру.
+
+В нас на платі є два користувацькі світлодіоди які через резистори піж'єднані до портів `PE7` та `PC7`. Спробуємо увімкнути їх.
+
+
+```c
+// Для потру C
+#define PC_ODR    (*(volatile unsigned char *)0x500A)
+#define PC_DDR    (*(volatile unsigned char *)0x500C)
+#define PC_CR1    (*(volatile unsigned char *)0x500D)
+
+// Для порту E
+#define PE_ODR    (*(volatile unsigned char *)0x5014)
+#define PE_DDR    (*(volatile unsigned char *)0x5016)
+#define PE_CR1    (*(volatile unsigned char *)0x5017)
+
+void main(void){
+    PC_DDR=0b10000000; // на вихід
+    PC_CR1=0b10000000; // пуш-пул
+    PC_ODR=0b10000000; // подаємо сигнал
+    PE_DDR=0b10000000;
+    PE_CR1=0b10000000;
+    PE_ODR=0b10000000;
+    for(;;);// Більше нічого не робимо
+}
+```
+
+Компілюємо  файл
+```zsh
+sdcc -mstm8 --std-c23 ./stm8.c  
+```
+
+Запихаємо у нашу плату
+```zsh
+stm8flash -c stlinkv2 -p stm8l152c6t6 -w stm8.ihx
+```
+
+Урра! Наші світлодіоди горять! Тобто світяться :smile:
