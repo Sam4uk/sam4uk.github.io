@@ -156,8 +156,10 @@ items:
 #==============================================================================
   - title: "Other Info"
     sections:
-      -  contents: | 
+      - contents: | 
             Familiar with Windows operating systems (`95`, `98`, `XP`, `NT`, `2000`, `7`, `8.1`) at the level of a system administrator. Proficient in using the `MS Office XP` and `MS Office 2000` office suites. Experienced user of `GNU/Linux` family operating systems (`Ubuntu 17.04`, `Linux Mint 19`, `Linux Mint 20`, `Kali Linux`) at both basic and intermediate levels (`Linux Manjaro`, `Arch Linux`). Has a basic understanding of several markup languages (`DHTML` and `XML`) and programming (`Pascal`, `JavaScript`). Continuously improving skills in `C/C++`, `cmake`, and `make`. Profound knowledge of electrical, radio, and circuit technology. Extensive experience in amateur radio practice (`Arduino`, AVR microcontrollers), PCB design. Proficient in using `FreeCad`, `EasyEda`, `KiCad`, and `Fritzing`.
-      -  contents: |
+      - contents: |
             Skills in working with a soldering station, including the assembly and disassembly of SMD and DIP components. Experience in working with electrical installations up to 1 kV.
+      - contents: |
+            Experience working with CNC machines and creating control programs for them: (3D print, LaserEngraver). Setup, preparation for work, simple repair. 
 ---
