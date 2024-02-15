@@ -251,3 +251,42 @@ stm8flash -c stlinkv2 -p stm8l152c6t6 -w stm8.ihx
 ```
 
 Урра! Наші світлодіоди горять! Тобто світяться :smile:
+
+А як щодо помигати світлодіодами?
+
+Препишемо трошки код
+
+```c
+#define PC_ODR    (*(volatile unsigned char *)0x500A)
+#define PC_DDR    (*(volatile unsigned char *)0x500C)
+#define PC_CR1    (*(volatile unsigned char *)0x500D)
+
+#define PE_ODR    (*(volatile unsigned char *)0x5014)
+#define PE_DDR    (*(volatile unsigned char *)0x5016)
+#define PE_CR1    (*(volatile unsigned char *)0x5017)
+
+const auto DELAY=0xFFFF;
+
+void main(void){
+    // конфігуруємо порти
+    PC_DDR=0b10000000; 
+    PC_CR1=0b10000000;
+
+    PE_DDR=0b10000000;
+    PE_CR1=0b10000000;
+    // буде мигати без конкретного часу 
+    // таймерів ще не знаємо тому через 
+    // делай
+    long delay;
+    for(;;){
+        delay=DELAY;
+      PC_ODR=0b10000000;
+      PE_ODR=0b00000000;
+      while(--delay){}
+      delay=DELAY;
+      PC_ODR=0b00000000;
+      PE_ODR=0b10000000;  
+      while(--delay){}
+    };
+}
+```
