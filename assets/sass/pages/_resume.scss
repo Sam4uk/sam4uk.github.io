@@ -42,6 +42,7 @@
         &--title {
           font-family: $title-font;
           font-size: 1.125rem;
+          text-align: left;
           color: themed('meta-color');
   
           @include flexbox();
@@ -53,6 +54,7 @@
         }
   
         &--meta {
+          text-align: right;
           font-size: 0.9rem;
         }
   

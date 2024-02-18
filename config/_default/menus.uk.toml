@@ -5,6 +5,12 @@
   weight = 10
 
 [[main]]
+  identifier = "Сertificates"
+  name = "Сертифікати"
+  url = "gallery/certificates"
+  weight = 9
+
+[[main]]
   identifier = "archive"
   name = "Архів"
   url = "archive"
