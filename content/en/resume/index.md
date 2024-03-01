@@ -104,7 +104,7 @@ items:
       - title: Robot engineer
         subtitle: Nanit Robots
         startDate: 2022-12-22
-        # endDate:
+        endDate: 2024-03-26
         contents: |
            Programming, development, and assembly of children's robotics kits for learning and familiarizing with the basics of robotics. Designing devices based on `ATmega2560` for teaching adults the fundamentals of embedded device programming for a "Smart Home." Assembly and disassembly (repair) of DIP and SMD components using soldering, soldering iron, and hotplate techniques. Also, designing various devices based on microcontrollers such as `AVR`, `ESP`, and `STM`.
       - title: Telecommunications engineer
