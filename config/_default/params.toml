@@ -2,7 +2,7 @@
 logoText = "Sam4uk"
 logoType = "short" # long, short
 logo = false # Logo that appears in the site navigation bar.
-description = "Я не ставлю перед собою мету комусь і щось донести через мережу."
+description = "Для вас я ще один чувак з інтернету, який любить Linux та програмувати."
 custom_css = []
 custom_js = []
 useFaviconGenerator = true # https://www.favicon-generator.org/
@@ -66,7 +66,7 @@ typeIcon = "🎯"
 # whoami
 myname = "Sam4uk"
 email = "sam4uk.site@gmail.com"
-whoami = "C++ Developer"
+whoami = "Embeded Software Engineare C/C++"
 bioImageUrl = "https://avatars.githubusercontent.com/u/15850554?v=4"
 useGravatar = false
 location = "Vyshgorod, Ukraine"
@@ -179,7 +179,7 @@ commento = false
  linkedin = "https://www.linkedin.com/in/sam4uk/"
 #  pinterest = "#"
 #  stack-exchange = "#"
-  telegram = "tg:@Sam4ukT"
+  telegram = "https://t.me/Sam4ukT"
 #  steam = "#"
 #  weibo = "#"
 #  douban = "#"
@@ -188,7 +188,7 @@ commento = false
 #  mastodon = "#"
 ##  jianshu = "#"
 ##  zhihu = "#"
-  signal = "#sam4uk"
+  signal = "sam4uk"
 #  whatsapp = "#"
 #  matrix = "#"
 #  xmpp = "#"
@@ -205,10 +205,12 @@ commento = false
 
 # possible share name: ["facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line", "pocket", "feedly", "hatena", "pinterest", "delicious", "google"]
 [[share]]
-#  name = "facebook"
+  name = "facebook"
 #  username = ""
 [[share]]
-#  name = "twitter"
+  name = "twitter"
+[[share]]
+  name = "linkedin"
 
 [[footerLinks]]
   name = ""
