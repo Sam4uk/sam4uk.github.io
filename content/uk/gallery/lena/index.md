@@ -16,7 +16,7 @@ images:
     caption: Lena
   - image: l_unpub.jpg
     caption: Lena
-image: len_std.jpg
+image: gallery/lena/len_std.jpg
 ---
 
 Найпоширеніше зображення яке використовують для перевірки алгоритмів роботи із зображенням
