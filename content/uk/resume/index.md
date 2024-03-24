@@ -1,8 +1,8 @@
 ---
 # UK
-title: "Embeded Software Engineare C++"
+title: "Embedded Software Engineare C++"
 date: 24-11-2023
-description: "Embeded Software Engineare C++"
+description: "Embedded Software Engineare C++"
 type: resume
 enableToc: false
 header:

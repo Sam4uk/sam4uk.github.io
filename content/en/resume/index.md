@@ -1,8 +1,8 @@
 ---
 # EN
-title: "Embeded Software Engineare C++"
+title: "Embedded Software Engineare C++"
 date: 18-05-22
-description: "Embeded Software Engineare C++"
+description: "Embedded Software Engineare C++"
 type: resume
 enableToc: false
 header:
