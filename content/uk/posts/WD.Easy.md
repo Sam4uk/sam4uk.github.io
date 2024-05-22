@@ -2,6 +2,9 @@
 title: WD.Easy
 date: 2024-05-22
 description: Біліотека для керування роботою сторожового таймеру
+draft: false
+weight: 2
+pinned: true
 tags:
 - C
 - C++
