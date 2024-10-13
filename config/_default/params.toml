@@ -70,7 +70,7 @@ whoami = "Embedded Software Engineare C/C++"
 bioImageUrl = "https://avatars.githubusercontent.com/u/15850554?v=4"
 useGravatar = false
 location = "Vyshgorod, Ukraine"
-organization = "-"
+organization = "Embedded Software Engineare C/C++"
 link = "https://sam4uk.github.io"
 
 # sidebar
@@ -188,7 +188,7 @@ commento = false
 #  mastodon = "#"
 ##  jianshu = "#"
 ##  zhihu = "#"
-  signal = "sam4uk"
+  signal = "https://signal.me/#eu/VHTez_np_12e2ZrhPNF9ISgJWeO3gYpE1bPpiAcN3yavIo4ezLZNv5B3sqgLULKJ"
 #  whatsapp = "#"
 #  matrix = "#"
 #  xmpp = "#"
