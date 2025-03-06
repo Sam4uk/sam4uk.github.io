@@ -1,0 +1,37 @@
+# showcase of the menu shortcuts;
+# you can use relative URLs linking to your content or use
+# fully-qualified URLs to link outside of your project
+
+
+[en]
+  title = 'Sam4uk.github.io'
+  weight = 1
+  languageCode = 'en'
+  languageName = 'English'
+  # Language dependent settings:
+  # Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+  contentDir = 'content/en'
+#  [en.params]
+#    landingPageName = '<i class="fa-fw fas fa-anchor"></i> Home'
+
+#[[en.menu.shortcuts]]
+#  pre = '<i class="fa-fw fas fa-puzzle-piece"></i> '
+#  name = 'Relearn Docs'
+#  url = 'https://mcshelby.github.io/hugo-theme-relearn/index.html'
+#  weight = 10
+#[[en.menu.shortcuts]]
+#  pre = '<i class="fa-fw fab fa-github"></i> '
+#  name = 'GitHub Repo'
+#  url = 'https://github.com/McShelby/hugo-theme-relearn'
+#  weight = 20
+
+
+
+[ua]
+  title = 'Sam4uk.github.io'
+  weight = 1
+  languageCode = 'ua'
+  languageName = 'Українська'
+  contentDir = 'content/ua'
+  [en.params]
+    landingPageName = '<i class="fa-fw fas fa-home"></i> Домашня сторінка'
