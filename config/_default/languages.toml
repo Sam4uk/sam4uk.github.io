@@ -33,5 +33,5 @@
   languageCode = 'ua'
   languageName = 'Українська'
   contentDir = 'content/ua'
-  [en.params]
+  [ua.params]
     landingPageName = '<i class="fa-fw fas fa-home"></i> Домашня сторінка'
