@@ -43,7 +43,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.SECTET_1 }}
+          token: ${{ secrets.SECRET_1 }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
