@@ -52,6 +52,8 @@ jobs:
         run: |
           git submodule add git@github.com:Sam4uk/content.git content
           git submodule update --init --recursive
+        with:
+          token: ${{ secrets.SECRET_1 }}
       
       - name: Build with Hugo
         env:
