@@ -1,6 +1,3 @@
 [submodule "themes/relearn"]
 	path = themes/relearn
 	url = git@github.com:Sam4uk/hugo-theme-relearn.git
-[submodule "content"]
-	path = content
-	url = git@github.com:Sam4uk/content.git
