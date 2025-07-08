@@ -61,8 +61,8 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - run: mkdir ./repo/main/amd64 -p
-      - run: touch ./repo/main/amd64/file
+      - run: mkdir ./public/repo/main/amd64 -p
+      - run: touch ./public/repo/main/amd64/file
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
