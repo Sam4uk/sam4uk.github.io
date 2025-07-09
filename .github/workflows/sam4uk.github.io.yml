@@ -84,6 +84,8 @@ jobs:
           gzip -k dists/focal/main/binary-all/Packages
           apt-ftparchive release dists/focal/ > dists/focal/Release
 
+      - run: tree
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
