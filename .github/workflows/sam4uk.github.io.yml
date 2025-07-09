@@ -61,8 +61,28 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - run: mkdir ./public/repo/main/amd64 -p
-      - run: touch ./public/repo/main/amd64/file
+
+      - name: Створюю структуру каталогів
+        run: |
+          mkdir -p \
+            ./public/dists/focal/main/binary-arm64 \
+            ./public/dists/focal/main/binary-amd64 \
+            ./public/dists/focal/main/binary-all \
+            ./public/dists/focal/Release
+
+      - name: Додаю пакунки
+        run: echo "add"
+               
+      - name: генерую мета дані
+        run: |
+          cd ./public
+          dpkg-scanpackages -m . > dists/focal/main/binary-amd64/Packages
+          dpkg-scanpackages -m . > dists/focal/main/binary-arm64/Packages
+          dpkg-scanpackages -m . > dists/focal/main/binary-all/Packages
+          gzip -k dists/focal/main/binary-amd64/Packages
+          gzip -k dists/focal/main/binary-arm64/Packages
+          gzip -k dists/focal/main/binary-all/Packages
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
