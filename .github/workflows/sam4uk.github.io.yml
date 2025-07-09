@@ -71,7 +71,8 @@ jobs:
             ./public/dists/focal/Release
 
       - name: Додаю пакунки
-        run: echo "add"
+        run: |
+          wget https://sam4uk.github.io/yb/yb-0.9-0.deb -P ./public/dists/focal/main/binary-all
                
       - name: генерую мета дані
         run: |
