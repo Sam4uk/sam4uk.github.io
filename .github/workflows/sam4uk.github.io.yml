@@ -67,8 +67,7 @@ jobs:
           mkdir -p \
             ./public/dists/focal/main/binary-arm64 \
             ./public/dists/focal/main/binary-amd64 \
-            ./public/dists/focal/main/binary-all \
-            ./public/dists/focal/Release
+            ./public/dists/focal/main/binary-all 
 
       - name: Додаю пакунки
         run: |
@@ -83,6 +82,7 @@ jobs:
           gzip -k dists/focal/main/binary-amd64/Packages
           gzip -k dists/focal/main/binary-arm64/Packages
           gzip -k dists/focal/main/binary-all/Packages
+          apt-ftparchive release dists/focal/ > dists/focal/Release
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
