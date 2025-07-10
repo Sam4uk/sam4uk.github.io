@@ -72,7 +72,7 @@ jobs:
       - name: Додаю пакунки
         run: |
           wget https://sam4uk.github.io/yb/yb-0.9-0.deb -P ./public/dists/focal/main/binary-all
-          wget https://sam4uk.github.io/quectel-CM/quectel-1.6.2-amd64.deb ./public/dists/focal/main/binary-amd64
+          wget https://sam4uk.github.io/quectel-CM/quectel-1.6.2-amd64.deb -P ./public/dists/focal/main/binary-amd64
                
       - name: генерую мета дані
         run: |
