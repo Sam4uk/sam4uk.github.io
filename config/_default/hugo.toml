@@ -19,7 +19,7 @@ relativeURLs = true # true -> rewrite all site-relative URLs (those with a leadi
 #themesdir = '../..'
 # yeah, well, obviously a mandatory setting for your site, if you want to
 # use this theme ;-)
-theme = 'relearn'
+theme = 'hugo-theme-relearn'
 
 defaultContentLanguage = 'ua'
 
