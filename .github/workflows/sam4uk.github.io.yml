@@ -86,6 +86,7 @@ jobs:
             pandoc \
             texlive-xetex \
             texlive-lang-cyrillic \
+            texlive-fonts-recommended \
             texlive-fonts-extra \
             texlive-latex-extra \
             fonts-liberation
