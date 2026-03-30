@@ -1,9 +1,9 @@
 \documentclass[a4paper,10pt]{article}
 
-% ---- Encoding & Language ----
-\usepackage[utf8]{inputenc}
-\usepackage[T2A]{fontenc}
-\usepackage[ukrainian,english]{babel}
+  % ---- Encoding & Language ----
+  \usepackage[utf8]{inputenc}
+  \usepackage[T2A]{fontenc}
+  \usepackage[ukrainian,english]{babel}
 
 % ---- Page layout ----
 \usepackage[
