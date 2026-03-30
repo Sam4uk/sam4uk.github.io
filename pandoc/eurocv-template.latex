@@ -1,0 +1,241 @@
+\documentclass[a4paper,10pt]{article}
+
+% ---- Encoding & Language ----
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[ukrainian,english]{babel}
+
+% ---- Page layout ----
+\usepackage[
+  top=1.5cm, bottom=1.5cm,
+  left=2cm,  right=2cm
+]{geometry}
+
+% ---- Fonts ----
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ---- Colors ----
+\usepackage{xcolor}
+\definecolor{euoblue}{RGB}{0, 51, 102}
+\definecolor{euogray}{RGB}{100, 100, 100}
+\definecolor{rulecol}{RGB}{0, 51, 102}
+
+% ---- Links ----
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=euoblue,
+  hidelinks
+}
+
+% ---- Icons (fontawesome5) ----
+\usepackage{fontawesome5}
+
+% ---- Graphics (photo) ----
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+% ---- Tables ----
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{array}
+
+% ---- Misc ----
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{calc}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% ---- Section style (Euro look) ----
+\titleformat{\section}
+  {\large\bfseries\color{euoblue}}
+  {}{0em}
+  {}
+  [\vspace{-4pt}\textcolor{rulecol}{\rule{\linewidth}{0.6pt}}\vspace{2pt}]
+
+\titleformat{\subsection}
+  {\normalsize\bfseries}
+  {}{0em}{}
+
+\titlespacing{\section}{0pt}{10pt}{4pt}
+\titlespacing{\subsection}{0pt}{6pt}{2pt}
+
+% ---- Custom list style ----
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=1pt,
+  topsep=2pt,
+  parsep=0pt
+}
+
+% ---- Euro header command ----
+% Usage: \cvheader{Name}{Title}{Phone}{Email}{Address}{LinkedIn}{GitHub}{PhotoPath}
+\newcommand{\cvheader}[8]{%
+  \begin{minipage}[t]{0.72\linewidth}
+    {\LARGE\bfseries\color{euoblue} #1}\\[4pt]
+    {\large\color{euogray} #2}\\[8pt]
+    \begin{tabular}{@{}ll@{\hspace{1.5em}}ll@{}}
+      \faPhone\ & #3 & \faEnvelope\ & \href{mailto:#4}{#4} \\[2pt]
+      \faMapMarker*\ & #5 & \faLinkedin\ & \href{https://#6}{#6} \\[2pt]
+      \faGithub\ & \href{https://#7}{#7} & & \\
+    \end{tabular}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.22\linewidth}
+    \raggedleft
+    \IfFileExists{#8}{%
+      \includegraphics[width=2.8cm,height=3.6cm,keepaspectratio]{#8}%
+    }{}
+  \end{minipage}
+  \vspace{6pt}
+  \textcolor{rulecol}{\rule{\linewidth}{1.2pt}}
+  \vspace{4pt}
+}
+
+% ---- Entry command ----
+% Usage: \cventry{Period}{Role}{Company}{Description}
+\newcommand{\cventry}[4]{%
+  \begin{tabularx}{\linewidth}{@{}p{2.6cm}X@{}}
+    \small\color{euogray}#1 &
+    \textbf{#2} \newline
+    \textit{\small #3} \newline
+    \small #4
+  \end{tabularx}
+  \vspace{2pt}
+}
+
+% ---- Education entry ----
+% Usage: \cvedu{Period}{Degree}{Institution}{Details}
+\newcommand{\cvedu}[4]{\cventry{#1}{#2}{#3}{#4}}
+
+% ---- Skill row ----
+% Usage: \cvskill{Category}{Items}
+\newcommand{\cvskill}[2]{%
+  \begin{tabularx}{\linewidth}{@{}p{3cm}X@{}}
+    \textbf{#1} & #2
+  \end{tabularx}
+  \vspace{1pt}
+}
+
+% ---- Language row ----
+% Usage: \cvlang{Language}{Level}{Note}
+\newcommand{\cvlang}[3]{%
+  \begin{tabularx}{\linewidth}{@{}p{3cm}p{3cm}X@{}}
+    \textbf{#1} & #2 & \small\color{euogray}#3
+  \end{tabularx}
+  \vspace{1pt}
+}
+
+% ============================================================
+\begin{document}
+\pagestyle{empty}
+
+% ---- HEADER ----
+\cvheader
+  {Ім'я Прізвище}
+  {C++ Software Engineer}
+  {+380 XX XXX XXXX}
+  {email@example.com}
+  {Київ, Україна}
+  {linkedin.com/in/yourprofile}
+  {github.com/yourusername}
+  {photo.jpg}   % або залиште порожнім якщо немає фото
+
+% ---- PORTFOLIO ----
+\section{Портфоліо}
+
+\cventry{2022 -- тепер}{Назва проекту}{Компанія / Open Source}{%
+  Короткий опис проекту. Що саме робили, які технології використовували.
+  \begin{itemize}
+    \item Ключовий результат або досягнення
+    \item Технологія / інструмент
+  \end{itemize}
+}
+
+\cventry{2020}{UrlVerify}{Курсовий проект}{%
+  Імплементація сервісу який сканує контент із заданого URL та перевіряє
+  безпечність протоколу обміну (http/https).
+  \begin{itemize}
+    \item C++
+  \end{itemize}
+}
+
+% ---- ІНШІ НЕКОМЕРЦІЙНІ ПРОЕКТИ ----
+\section{Інші некомерційні проекти}
+
+\cventry{2005}{Disocio}{Курсовий проект}{%
+  Програма демонстрації хімічного процесу електролітичної дисоціації.
+  Демонструвала та пояснювала процеси, що відбуваються у розчині електроліту.
+  \begin{itemize}
+    \item Delphi7 (Pascal), Flash, ActionScript
+  \end{itemize}
+}
+
+\cventry{2003}{CorelDrawText}{Курсовий проект}{%
+  Навчально-тестуюча програма «Робота з текстом у векторному редакторі CorelDraw~5.0».
+  Тестові питання обиралися випадковим чином; відповіді зберігалися в окремих файлах.
+  \begin{itemize}
+    \item Delphi (Pascal)
+  \end{itemize}
+}
+
+% ---- ДОСВІД РОБОТИ ----
+\section{Загальний досвід роботи}
+
+\cventry{2020 -- тепер}{Senior C++ Software Engineer}{Назва компанії}{%
+  Опис обов'язків та досягнень.
+  \begin{itemize}
+    \item Розробка high-performance компонентів
+    \item Code review, менторство молодших розробників
+  \end{itemize}
+}
+
+\cventry{2015 -- 2020}{C++ Software Engineer}{Назва компанії}{%
+  Опис обов'язків.
+  \begin{itemize}
+    \item Технологія 1, Технологія 2
+  \end{itemize}
+}
+
+% ---- ІНША ІНФОРМАЦІЯ ----
+\section{Інша інформація}
+
+Додаткова інформація: відкритий код, конференції, публікації, хобі тощо.
+
+% ---- ОСВІТА ----
+\section{Освіта}
+
+\cvedu{2018 -- 2020}{Магістр, Комп'ютерні науки}{Університет}{%
+  Тема магістерської роботи або спеціалізація.
+}
+
+\cvedu{2014 -- 2018}{Бакалавр, Комп'ютерні науки}{Університет}{}
+
+% ---- НАВИЧКИ ----
+\section{Навички}
+
+\cvskill{Мови}{C++17/20, Python, Bash}
+\cvskill{Фреймворки}{Qt, Boost, STL, CMake, Conan}
+\cvskill{Інструменти}{Git, Docker, GDB, Valgrind, CLion}
+\cvskill{Системи}{Linux, Windows}
+
+% ---- МОВИ ----
+\section{Мови}
+
+\cvlang{Українська}{Рідна}{}
+\cvlang{Англійська}{B2 — Upper Intermediate}{Технічна документація, листування}
+\cvlang{Польська}{A2 — Elementary}{}
+
+% ---- FOOTER ----
+\vfill
+\begin{center}
+  \tiny\color{euogray}
+  Я даю згоду на обробку моїх персональних даних з метою рекрутингу
+  відповідно до Закону України «Про захист персональних даних».
+\end{center}
+
+\end{document}
