@@ -76,7 +76,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: /var/cache/apt/archives
-          key: latex-${{ runner.os }}-v1
+          key: latex-${{ runner.os }}-v3
           restore-keys: |
             latex-${{ runner.os }}-
 
